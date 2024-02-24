@@ -1,0 +1,47 @@
+{
+	"topBar": {
+		"buttons": {
+			"undo": "Undo",
+			"redo": "Redo",
+			"config": "Configuración"
+		}
+	},
+	"config": {
+		"title": "Configuración",
+		"language": "Idioma",
+		"checklist": "Checklist",
+		"clearChecklist": "Limpiar Checklist",
+		"clearConfirm": "¿Está seguro que desea eliminar el avance en el checklist?"
+	},
+	"checklist": {
+		"task": {
+			"expected": {
+				"title": "Resultado Esperado"
+			},
+			"input": {
+				"type": "Ingresar Valor",
+				"retype": "Repertir Valor"
+			},
+			"incident": {
+				"title": "Incidente",
+				"add": "Agregar Incidente",
+				"edit": "Editar Incidente"
+			},
+			"buttons": {
+				"check": "Check"
+			}
+		},
+		"participants": {
+			"title": "Participantes"
+		},
+		"base64": {
+			"title": "Datos de la Ceremonia"
+		}
+	},
+	"buttons": {
+		"yes": "Sí",
+		"no": "No",
+		"save": "Guardar",
+		"delete": "Eliminar"
+	}
+}

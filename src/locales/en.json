@@ -1,0 +1,47 @@
+{
+	"topBar": {
+		"buttons": {
+			"undo": "Undo",
+			"redo": "Redo",
+			"config": "Configuration"
+		}
+	},
+	"config": {
+		"title": "Settings",
+		"language": "Languange",
+		"checklist": "Checklist",
+		"clearChecklist": "Clear Checklist",
+		"clearConfirm": "Are you sure you want to delete the progress in the checklist?"
+	},
+	"checklist": {
+		"task": {
+			"expected": {
+				"title": "Expected Result"
+			},
+			"input": {
+				"type": "Type Value",
+				"retype": "Retype Value"
+			},
+			"incident": {
+				"title": "Incident",
+				"add": "Add Incident",
+				"edit": "Edit Incident"
+			},
+			"buttons": {
+				"check": "Check"
+			}
+		},
+		"participants": {
+			"title": "Participants"
+		},
+		"base64": {
+			"title": "Ceremony Data"
+		}
+	},
+	"buttons": {
+		"yes": "Yes",
+		"no": "No",
+		"save": "Save",
+		"delete": "Delete"
+	}
+}

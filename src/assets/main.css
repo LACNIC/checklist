@@ -1,0 +1,10 @@
+body {
+	font-family: Verdana;
+	font-size: 16px;
+	margin: 0px !important;
+}
+
+ul li, ol li {
+	margin-bottom: 6px;
+	margin-left: -20px;
+}

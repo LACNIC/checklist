@@ -1,0 +1,44 @@
+data:
+  serialNumber:
+    label: "Serial Number"
+    format: "word-4"
+  usbHash:
+    label: "USB Memory Stick Hash"
+    format: "sha-256"
+
+sections:
+    - title: "Welcome"
+      tasks:
+        - msg: "**CA** welcomes all participants."
+        - msg: |
+            **CA** reads and explains all the mogwai rules.
+            1. Do not expose the mogwai to light, especially sunlight, which will kill it.
+            1. Do not let it come in contact with water.
+            1. Never feed it after midnight.
+
+            <sub>Source: [Wikipedia](https://en.wikipedia.org/wiki/Gremlins)</sub>
+        - msg: "**CA** list all directory content."
+          code: "ls -lha"
+          expected:
+            msg: "The listing **MUST** contain the following files. *Note: the file dates may be different.*"
+            code: |
+              -rw-r--r--    1 user  staff   702B Nov 26 19:22 README.md
+              -rw-r--r--    1 user  staff   332B Nov 26 19:42 index.html
+              drwxr-xr-x  179 user  staff   5.9K Nov 27 17:58 node_modules
+              -rw-r--r--    1 user  staff   102K Nov 27 18:08 package-lock.json
+              -rw-r--r--    1 user  staff   714B Nov 27 17:58 package.json
+              drwxr-xr-x    6 user  staff   204B Nov 27 12:57 public
+              drwxr-xr-x   10 user  staff   340B Nov 28 09:19 src
+              -rw-r--r--    1 user  staff   309B Nov 26 19:22 vite.config.js
+
+    - title: "Elements Validation"
+      tasks:
+        - msg: "**CA** validates the serial number of the security bag."
+          output: "serialNumber"
+        - msg: "**CA** validates the hash of the USB memory stick."
+          output: "usbHash"
+
+    - title: "Element Storage"
+      tasks:
+        - msg: "**CA** records the serial number of the security bag."
+          input: "serialNumber"

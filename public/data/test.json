@@ -1,0 +1,18 @@
+{
+	"script": "/scripts/test.yml",
+	"title": "Test Checklist",
+	"location": "CILAC, Montevideo, Uruguay",
+	"date": "2023-10-23T10:00-06:00",
+	"participants": {
+		"CA": "Ceremony Admin",
+		"IW": "Internal Witness",
+		"CO1": "Crypto Officer 1",
+		"CO2": "Crypto Officer 2",
+		"CO3": "Crypto Officer 3",
+		"SA": "System Administrator"
+	},
+	"data": {
+		"serialNumber": "12390813094801",
+		"usbHash": "9F86D081884C7D659A2FEAA0C55AD015A3BF4F1B2B0B822CD15D6C15B0F00A08"
+	}
+}
