@@ -69,7 +69,7 @@ An example of the JSON script is provided in the `/public/data` directory.
 You can set up a favicon, add the icon file in the `/public` directory, and uncomment the link tag in the `index.html` file.
 
 ### Logo
-You can also add a logo image uncomment the line in the script section of the `/src/views/ChecklistView.vue' file.
+You can also add a logo image uncomment the line in the script section of the `/src/views/ChecklistView.vue` file.
 
 
 ## Project Setup
