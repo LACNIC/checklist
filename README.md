@@ -53,7 +53,7 @@ You can define the checklist script using the YAML format. Here is the list of o
 
 Once you create the checklist script, you must create a JSON file with the information about when the script is executed, for example, in a cryptographic key generation ceremony or object signing.
 
-An example of the JSON script is provided in the `/public/data directory`.
+An example of the JSON script is provided in the `/public/data` directory.
 
 | Parameter | Type | Required | Description |
 |:----------|:----:|:--------:|:------------|
@@ -61,8 +61,8 @@ An example of the JSON script is provided in the `/public/data directory`.
 | title | String | true | Title of the Checklist script. |
 | location | String | false | Location or place. |
 | date | Date | false | Date. |
-| participants | Object | A role-name list of the participants as a key-value format. |
-| data | Object | Values of the data variables defined in the script. |
+| participants | Object | true |  A role-name list of the participants as a key-value format. |
+| data | Object | true | Values of the data variables defined in the script. |
 
 ## Personalize
 ### Favicon
