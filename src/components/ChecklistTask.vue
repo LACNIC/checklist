@@ -176,6 +176,7 @@
 				.code {
 					background-color: transparent;
 					border: 0px;
+					overflow-x: scroll;
 				}
 			}
 		}
