@@ -10,7 +10,10 @@
 			<checklist-section :id="i" :section="section" :script="script" :data="data" />
 		</template>
 	</template>
-	<participants-section :list="data.participants" v-if="data" />
+	<template v-if="data">
+		<participants-section :list="data.participants" v-if="data.participants" />
+		<rols-section :list="data.rols" v-if="data.rols" />
+	</template>
 	<results-section />
 </template>
 
@@ -22,6 +25,7 @@
 	import ChecklistSection from "@/components/ChecklistSection.vue";
 	import ParticipantsSection from "@/components/ParticipantsSection.vue";
 	import ResultsSection from "@/components/ResultsSection.vue";
+	import RolsSection from "@/components/RolsSection.vue";
 	import yaml from "js-yaml";
 	import config from "@/config";
 

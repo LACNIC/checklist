@@ -34,6 +34,9 @@
 		"participants": {
 			"title": "Participants"
 		},
+		"rols": {
+			"title": "Roles"
+		},
 		"base64": {
 			"title": "Ceremony Data"
 		}
