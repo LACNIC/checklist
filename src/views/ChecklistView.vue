@@ -12,7 +12,7 @@
 	</template>
 	<template v-if="data">
 		<participants-section :list="data.participants" v-if="data.participants" />
-		<rols-section :list="data.rols" v-if="data.rols" />
+		<roles-section :list="data.roles" v-if="data.roles" />
 	</template>
 	<results-section />
 </template>
@@ -25,7 +25,7 @@
 	import ChecklistSection from "@/components/ChecklistSection.vue";
 	import ParticipantsSection from "@/components/ParticipantsSection.vue";
 	import ResultsSection from "@/components/ResultsSection.vue";
-	import RolsSection from "@/components/RolsSection.vue";
+	import RolesSection from "@/components/RolesSection.vue";
 	import yaml from "js-yaml";
 	import config from "@/config";
 

@@ -61,6 +61,7 @@ An example of the JSON script is provided in the `/public/data` directory.
 | title | String | true | Title of the Checklist script. |
 | location | String | false | Location or place. |
 | date | Date | false | Date. |
+| roles | Object | A role description list as a key-value format. |
 | participants | Object | true |  A role-name list of the participants as a key-value format. |
 | data | Object | true | Values of the data variables defined in the script. |
 

@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<h1>{{ t("checklist.rols.title") }}</h1>
+		<h1>{{ t("checklist.roles.title") }}</h1>
 		<div class="container">
 			<template v-for="(p, k) in list" :key="k">
 				<span class="role">{{ k }}: </span><span>{{ p }}</span>
