@@ -1,5 +1,8 @@
 export default Object.freeze({
-	//--- Data ---
+	// --- Base ---
+	PUBLIC_PATH: "/",
+
+	// --- Data ---
 	DEFAULT_DATA_ID: "test.json",
 
 	// --- Markdown ---
@@ -21,5 +24,5 @@ export default Object.freeze({
 
 	// --- Local Storage ---
 	LOCAL_STORAGE_DATA_ID: "sessionData",
-	LOCAL_STORAGE_TTL_MS: 7 * 24 * 60 * 60 * 1000, // 7 Day
+	LOCAL_STORAGE_TTL_MS: 7 * 24 * 60 * 60 * 1000, // 7 Days
 });

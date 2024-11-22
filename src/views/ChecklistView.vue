@@ -27,6 +27,7 @@
 	import ResultsSection from "@/components/ResultsSection.vue";
 	import RolesSection from "@/components/RolesSection.vue";
 	import yaml from "js-yaml";
+	import { replacePublicPath } from "@/modules/checklist";
 	import config from "@/config";
 
 	defineOptions({
@@ -40,7 +41,7 @@
 	const { locale } = useI18n();
 	const options = { year: 'numeric', month: 'long', day: 'numeric' };
 
-	const id = route.params.id ? ("/data/" + route.params.id) : config.DEFAULT_DATA_URL;
+	const id = route.params.id ? (replacePublicPath("/data/") + route.params.id) : config.DEFAULT_DATA_URL;
 	const data = ref(null);
 	const script = ref(null);
 
@@ -50,13 +51,14 @@
 		fetch(url)
 			.then(resp => resp.json())
 			.then(json => data.value = json)
-			.then(() => fetch(data.value.script)
+			.then(() => fetch(replacePublicPath(data.value.script))
 				.then(resp => resp.blob())
 				.then(blob => blob.text())
 				.then(text => yaml.load(text))
 				.then(yaml => { results.init(url, yaml); return yaml })
 				.then(yaml => script.value = yaml)
 				.then(() => emit("loaded", data.value.title))
+				.catch(e => { emit("error"); throw e; })
 			)
 			.catch(e => { emit("error"); throw e; });
 	}
